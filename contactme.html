@@ -1,0 +1,54 @@
+<html>
+<meta charset="utf-8" name="viewport" content="width=device-width" />
+<link rel="stylesheet" type="text/css" href="style.css">
+    <script> function thank(){
+            window.alert("Thank You For Your Submission!");
+        }
+    </script>
+<body>
+     <nav class="menu">
+    <ul class="active">
+        <li class="current-item"><a href="index.html">Home</a></li>
+        <li><a href="resume.html">Resume</a></li>
+       <li><a href="aboutMe.html">About Me</a></li>
+       <li><a href="projects.html">Projects</a></li>
+       <li><a href="contactme.html">Contact</a></li>
+    </ul>
+    </nav>
+
+<p>Required fields are <b>bold</b></p>
+
+<form action="action_page.php" method="post">
+<p><b>Your Name:</b> <input type="text" name="yourname" /><br />
+<b>Subject:</b> <input type="text" name="subject" /><br />
+<b>E-mail:</b> <input type="text" name="email" /><br />
+Website: <input type="text" name="website"></p>
+
+<p>Do you like this website?
+<input type="radio" name="likeit" value="Yes" checked="checked" /> Yes
+<input type="radio" name="likeit" value="No" /> No
+<input type="radio" name="likeit" value="Not sure" /> It's Okay</p>
+
+<p>How did you find us?
+<select name="how">
+<option value=""> -- Please select -- </option>
+<option>Google</option>
+<option>Yahoo</option>
+<option>Link from a website</option>
+<option>Word of mouth</option>
+<option>Other</option>
+</select>
+
+<p><b>Your comments:</b><br />
+<textarea name="comments" rows="10" cols="40"></textarea></p>
+
+<p><input onclick="thank()" type="submit" value="Send"></p>
+
+<p> </p>
+<p>Powered by <a href="http://myphpform.com">PHP form</a></p>
+
+</form>
+
+</body>
+    &copy; <script>new Date().getFullYear()>2010&&document.write(+new Date().getFullYear());</script>
+</html>

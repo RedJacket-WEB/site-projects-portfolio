@@ -1,0 +1,270 @@
+/*Designing Color*/
+
+
+/*font: 
+  - rem rather than em
+  - vw, resizable 
+*/
+@import url(https://fonts.googleapis.com/css?family=Old+Standard+TT|Playfair+Display|Fredericka+the+Great);
+@import url(https://fonts.googleapis.com/css?family=Poiret+One);
+
+html {
+  box-sizing: border-box;
+  height: 100%;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+header {
+  padding: 10px;
+  /*Step to make full screen hero image from here*/
+  height: 100%;
+  width: 100%;
+  /*Step to make full screen hero image to here + above steps*/
+  background: url(http://glitchslap.com/wp-content/uploads/2015/03/synthwaveshow.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+body {
+  background-color: #A1938A;
+  padding: 0px;
+  margin: 0px;
+  height: 100%;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  /*to do gradient: - it should be in a block with fixed background*/
+}
+p {
+  font-family: 'Poiret One', serif;
+  font-size:3vh;
+}
+header h1 {
+  font-family: 'Poiret One', serif;
+  /*margin-left: 46%;
+  margin-top: 10%;*/
+  font-size: 26vh;
+  width: 50vh;
+  position:center;
+  color:#fff;
+  line-height: 22vh;
+  text-align: center;
+ /* background: rgba(255, 255, 255, 0.5);
+  border-radius: 25px;*/
+  padding: 3vh;
+}
+ 
+header h2 {
+  font-family: 'Poiret One', cursive;
+  position: top-left;
+  color:#fff;
+  font-size: 4vh;
+  top: 18vh;
+  left: 10vh;
+ 
+}
+
+#zen-summary {
+ /* background-color: white;*/
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 3vh;
+  text-align: center;
+  padding: 0.1vh;
+  font-size: 2vh;
+}
+
+#zen-preamble {
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 3vh;
+  padding: 0.1vh;
+}
+
+#zen-preamble h3 {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0vh;
+  margin-bottom: 0vh;
+  padding:1vh;
+  text-align: center;
+  font-family: 'Poiret One', cursive;
+  font-size: 8vh;
+  border-top: 4px solid black;
+  border-bottom: 4px solid black;
+}
+
+#zen-preamble p {
+  width: 90%;
+  text-align: left;
+  margin-top: 3vh;
+  margin-bottom: 3vh;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#zen-supporting {
+  background-color: #FFE9DB;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2vh;
+}
+
+#zen-explanation {
+  padding: 10px;
+  height: 100%;
+  width: 100%;
+  opacity:0.9;
+  position: relative;
+  background: url(http://radiostudent.si/sites/default/files/slike/2015-05-20-elektri%C4%8Dna-mobilnost-slovenskih-tehnologij-42005.jpg);
+  background-size: cover;
+  background-attachment: scroll;
+}
+
+#zen-explanation h3 {
+  width: 30vh;
+  margin-right: auto;
+  margin-top: 40%;
+  text-align: center;
+  font-family: 'Poiret One' ;
+  color:#fff;
+  font-size: 8vh;
+  border-top: 4px solid white;
+  border-bottom: 4px solid white;
+  /*display: inline-block;*/
+}
+
+#zen-explanation p {
+  font-size: 3vh;
+  width: 50vh;
+  margin-left: 60vh;
+  color:#fff;
+  display: inline-block;
+  padding: 3vh;
+  background: rgba(255, 255, 255, 0.5);
+}
+
+#zen-supporting .participation, .benefits,.requirements {
+    -webkit-transition:0.3s;
+    transition:0.3 s;
+  
+}
+
+.participation, .benefits,.requirements {
+  width: 70%;
+  margin:auto;
+  margin-bottom: 0;
+  padding-left:10vh;
+  padding-right:10vh;
+  border-left:8px dotted #7D6B5F;
+}
+.participation h3{
+  width:15vh;
+  height:15vh;
+  font-family:Poiret One;
+  line-height:15vh;
+  text-align:center;
+  background-color:#99004C;
+  border-radius:100%
+}
+
+.benefits h3{
+  margin:auto;
+  width:15vh;
+  height:15vh;
+  font-family:Poiret One;
+  line-height:15vh;
+  text-align:center;
+  background-color:#76B0B2;
+  border-radius:100%
+}
+.requirements h3 {
+  margin-left:auto;
+  width:15vh;
+  height:15vh;
+  font-family:Poiret One;
+  line-height:15vh;
+  text-align:center;
+  background-color:#E84A5F;
+  border-radius:100%
+}
+#zen-supporting:hover .participation, .benefits,.requirements {
+  opacity:0.3;
+}
+#zen-supporting:hover .participation:hover {
+  opacity:1;
+}
+
+#zen-supporting:hover .benefits:hover {
+  opacity:1;
+  border-right:8px dotted #7D6B5F;
+  border-left:none;
+}
+#zen-supporting:hover .requirements:hover {
+  opacity:1;
+}
+
+a:link, a:visited {
+  color:#fff;
+  text-decoration:none;
+  border-bottom: #000;
+}
+a:visited {
+  color:#000;
+  text-decoration:none;
+}
+a:hover {
+  border-bottom: 1px solid #000;
+}
+
+footer {
+  width:30%;
+  height:8vh;
+  margin-left:auto;
+  margin-right:auto;
+  margin-top:2vh;
+  margin-bottom:2vh;
+  line-heigh:5vh;
+  padding:0;
+  background
+}
+
+footer a {
+  float: left;
+  box-sizing: border-box;
+  width: 20%;
+  font-family: Poiret One;
+  text-align: center;
+  background: #0080FF;
+  padding: 1em 0;
+  color: #f6f4ec;
+  letter-spacing: .05em;
+}
+  
+}
+.wrapper {
+  margin-top:0;
+  width:70%;
+  margin-left:auto;
+  margin-right:auto;
+}
+ul{
+font-family:Poiret One;
+}
+.select{
+font-family: Poiret One;
+}
+.archives{
+font-family: Poiret One;
+}
+.resources{
+font-family: Poiret One;
+}
